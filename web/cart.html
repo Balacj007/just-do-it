@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .cart-container {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .cart-item img {
+      width: 100px;
+      height: auto;
+      border-radius: 4px;
+      margin-right: 20px;
+    }
+
+    .item-details {
+      flex: 2;
+      display: flex;
+      align-items: center;
+    }
+
+    .item-info {
+      flex: 1;
+    }
+
+    .item-info h4 {
+      margin: 0 0 10px;
+    }
+
+    .quantity input {
+      width: 50px;
+      padding: 5px;
+    }
+
+    .price {
+      flex: 0.5;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .total-section {
+      text-align: right;
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .checkout-btn {
+      display: block;
+      margin: 30px auto 0;
+      padding: 12px 30px;
+      background-color: #ff9900;
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .checkout-btn:hover {
+      background-color: #e68a00;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cart-container">
+    <h1>Your Shopping Cart</h1>
+
+    <div class="cart-item">
+      <div class="item-details">
+        <img src="https://via.placeholder.com/100" alt="Product 1">
+        <div class="item-info">
+          <h4>Product Name 1</h4>
+          <div class="quantity">
+            Quantity: <input type="number" value="1" min="1">
+          </div>
+        </div>
+      </div>
+      <div class="price">$19.99</div>
+    </div>
+
+    <div class="cart-item">
+      <div class="item-details">
+        <img src="https://via.placeholder.com/100" alt="Product 2">
+        <div class="item-info">
+          <h4>Product Name 2</h4>
+          <div class="quantity">
+            Quantity: <input type="number" value="2" min="1">
+          </div>
+        </div>
+      </div>
+      <div class="price">$39.98</div>
+    </div>
+
+    <div class="total-section">
+      Subtotal: $59.97
+    </div>
+
+    <a href="order.html" class="checkout-btn">Proceed to Checkout</a>
+  </div>
+
+</body>
+</html>
